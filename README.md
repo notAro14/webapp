@@ -1,3 +1,13 @@
-# Webapp template
+# React testing practices demo
 
-Start quickly an SPA with React
+Run test
+
+```sh
+pnpm test
+```
+
+Run app
+
+```sh
+pnpm dev
+```
