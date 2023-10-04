@@ -1,13 +1,10 @@
 import props from "open-props";
 import { recipe, RecipeVariants } from "@vanilla-extract/recipes";
+import { vars } from "src/css/theme.css";
 
 export const text = recipe({
   base: {
-    fontFamily: props["--font-mono"],
-    margin: 0,
-    padding: 0,
-    boxSizing: "border-box",
-    lineHeight: 1.75,
+    fontFamily: vars.fonts.sans,
   },
   variants: {
     size: {
