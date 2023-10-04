@@ -1,4 +1,4 @@
-import { text } from "./components/ui/Text";
+import { text } from "src/components/ui/Text";
 
 export default function App() {
   return (
