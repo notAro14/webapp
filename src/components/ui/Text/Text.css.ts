@@ -1,42 +1,40 @@
-import props from "open-props";
-import { recipe, RecipeVariants } from "@vanilla-extract/recipes";
-import { vars } from "src/css/theme.css";
+import { cva } from "styled-system/css";
 
-export const text = recipe({
+export const text = cva({
   base: {
-    fontFamily: vars.fonts.sans,
+    fontFamily: "body",
   },
   variants: {
     size: {
       xs: {
-        fontSize: props.fontSize00,
+        fontSize: "xs",
       },
       sm: {
-        fontSize: props.fontSize0,
+        fontSize: "sm",
       },
       md: {
-        fontSize: props.fontSize1,
+        fontSize: "md",
       },
       lg: {
-        fontSize: props.fontSize2,
+        fontSize: "lg",
       },
       xl: {
-        fontSize: props.fontSize3,
+        fontSize: "xl",
       },
       "2xl": {
-        fontSize: props.fontSize4,
+        fontSize: "2xl",
       },
       "3xl": {
-        fontSize: props.fontSize5,
+        fontSize: "3xl",
       },
       "4xl": {
-        fontSize: props.fontSize6,
+        fontSize: "4xl",
       },
       "5xl": {
-        fontSize: props.fontSize7,
+        fontSize: "5xl",
       },
       "6xl": {
-        fontSize: props.fontSize8,
+        fontSize: "6xl",
       },
     },
   },
@@ -44,5 +42,3 @@ export const text = recipe({
     size: "md",
   },
 });
-
-export type TextVariants = RecipeVariants<typeof text>;

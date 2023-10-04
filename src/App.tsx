@@ -1,12 +1,12 @@
-import { themeClass } from "src/css/theme.css";
+import { Providers } from "src/components/Providers";
 import { text } from "src/components/ui/Text";
 
 export default function App() {
   return (
-    <main className={themeClass}>
-      <p className={text({ size: "2xl" })}>
-        The quick brown for jumps over the lazy dog
+    <Providers>
+      <p className={text({ size: "lg" })}>
+        The quick brown fox jumps over the lazy dog
       </p>
-    </main>
+    </Providers>
   );
 }

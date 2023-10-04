@@ -22,9 +22,10 @@
 
     // Custom
     "paths": {
-      "src/*": ["./src/*"]
+      "src/*": ["./src/*"],
+      "styled-system/*": ["./styled-system/*"]
     }
   },
-  "include": ["src", ".ladle"],
+  "include": ["src", ".ladle", "styled-system"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

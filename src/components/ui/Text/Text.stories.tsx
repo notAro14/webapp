@@ -1,3 +1,4 @@
+import "src/index.css";
 import type { Story, StoryDefault } from "@ladle/react";
 import { text } from "./Text.css";
 
